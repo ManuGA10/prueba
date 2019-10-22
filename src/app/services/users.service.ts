@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class UsersService {
 
-  baseURL = 'https://uifaces.co/api?limit=12';
+  baseURL = 'https://uifaces.co/api?limit=20';
 
   constructor(private http: HttpClient) { }
 
@@ -16,7 +16,6 @@ export class UsersService {
         'X-API-KEY':  '04fafacd6d64ecab8468ec30733e55'
       })
     };
-
     return this.http.get(this.baseURL, httpOptions );
   }
 }
