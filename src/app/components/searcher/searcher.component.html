@@ -1,0 +1,12 @@
+<nav class="navbar fixed-top navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+      <img src="https://image.flaticon.com/icons/svg/1528/1528669.svg" alt="image not found" style="height:40px; filter: brightness(0) invert(1);">
+  </a>
+  <form class="form-inline collapse" id="searcher" #form="ngForm" (ngSubmit)="submitForm(form.value)">
+    <input class="form-control mr-sm-2" type="text" name="search" ngModel placeholder="Search">
+    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+  </form>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#searcher" aria-controls="searcher" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>

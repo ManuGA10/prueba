@@ -1,0 +1,16 @@
+button:hover{
+  color: white;
+  background-color: gray;
+  border-color: gray;
+}
+
+input:focus {
+  box-shadow: 0px 0px 3px white;
+  border-color: gray;
+}
+
+
+
+/*@media (min-width: 575.98px) {
+  #searcher.collapse { display: block; }
+}*/
